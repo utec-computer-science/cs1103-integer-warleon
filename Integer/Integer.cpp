@@ -67,7 +67,7 @@ bool Integer::operator!=(int a){return mynum_!=a;}
 bool Integer::operator==(int a){return mynum_==a;}
 int Integer::getMyNum(const Integer& num){return num.mynum_;}
 
-std::ostream operator<<(const std::ostream& os, const Integer& num){
+std::ostream& operator<<(std::ostream& os, const Integer& num){
 	os<<num.mynum_;
 	return os;
 }

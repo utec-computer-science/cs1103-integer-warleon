@@ -33,5 +33,5 @@ public:
 	bool isMultOf(int a);
 	int getMyNum(const Integer& num);
 //ostream
-	friend std::ostream operator<<(const std::ostream& os, const Integer& num);
+	friend std::ostream& operator<<(std::ostream& os, const Integer& num);
 };
